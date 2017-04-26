@@ -1,4 +1,11 @@
-<div class="col-md-8 col-offset-2">
-<h1 class='new-message-header'>Post Message </h1>
+<%@messages.each do |message|%>
+    <div class="col-md-10 col-offset-1">
+     <div class="message"> 
+      <h2 class="message-title"><%= message.title %></h2>
+        <%= link_to "Join Conversation", message, class: "btn-custom" %>
+     </div>
+    </div>    
+ <%end%>
 
-</div>
+ <%= link_to "Post Message", new_message_path %>
+ 

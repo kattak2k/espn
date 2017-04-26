@@ -3,6 +3,10 @@ class MessagesController < ApplicationController
     @messages = Message.all.order(created_at: :desc)
   end
 
+  def show
+    @message = Message.find(params[:id])
+  end
+
   def new
     @message = Message.new
   end
@@ -15,8 +19,9 @@ class MessagesController < ApplicationController
     else
       render 'new'
     end   
-  end 
+  end
 
+  
 
  private
 
