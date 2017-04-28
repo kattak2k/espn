@@ -1,17 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+The app is a replica of Craigslist
 
 * Ruby version
 
+  1.Rails 5.0.2
+  2.ruby 2.3.3
+
 * System dependencies
-
+ 
 * Configuration
-
+ 
 * Database creation
+  
+  1.rails g model Comment content:text message:references user:references
 
 * Database initialization
 
