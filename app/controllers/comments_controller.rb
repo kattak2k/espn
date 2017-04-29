@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
            render 'new'    
         end
      else
-       redirect_to message_path(@message)    
+       redirect_to message_path(@message)
      end
     end
 
